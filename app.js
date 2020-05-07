@@ -1,6 +1,6 @@
 const { prompt } = require('inquirer');
 const cTable = require('console.table');
-const db = require('./db');
+const db = require('.');
 async function runSearch() {
   const { choice } = await prompt([
     {
@@ -248,7 +248,16 @@ async function removeEmployee() {
 }
 runSearch();
 
+//     `Added ${employee.first_name} ${employee.last_name} to the database`
+//   );
 
+//   loadMainPrompts();
+// }
+
+// function quit() {
+//   console.log("Goodbye!");
+//   process.exit();
+// }
 
 // const { prompt } = require("inquirer");
 // const logo = require("asciiart-logo");
